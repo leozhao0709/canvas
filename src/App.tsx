@@ -1,19 +1,14 @@
 import * as React from 'react';
+import { Canvas } from './container/Canvas/Canvas';
+import { Sidebar } from './container/Sidebar/Sidebar';
 import * as styles from './App.css';
-
-import logo from './logo.svg';
 
 class App extends React.Component {
     public render() {
         return (
             <div className={styles.app}>
-                <header className={styles.appHeader}>
-                    <img src={logo} className={styles.appLogo} alt="logo" />
-                    <h1 className={styles.appTitle}>Welcome to React</h1>
-                </header>
-                <p className={styles.appIntro}>
-                    To get started, edit <code>src/App.tsx</code> and save to reload.
-                </p>
+                <Sidebar />
+                <Canvas />
             </div>
         );
     }
